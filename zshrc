@@ -32,11 +32,11 @@ ZSH_THEME="doubleend"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras git-flow mvn lein mercurial brew text-mate osx last-working-dir dircycle)
+plugins=(zsh-syntax-highlighting zsh-history-substring-search git git-extras git-flow mvn lein mercurial brew text-mate osx last-working-dir dircycle)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 BASH=$HOME/Dropbox/Settings/bash
 
