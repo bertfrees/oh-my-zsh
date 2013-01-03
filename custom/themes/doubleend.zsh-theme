@@ -43,10 +43,10 @@ function put_spacing() {
 
 function precmd() {
 print -rP '
-$fg[magenta]%n%{$reset_color%} @ $fg[cyan]%m: $fg[yellow]$(get_pwd)$(put_spacing)$(git_prompt_info) $(battery_charge)'
+$fg_bold[magenta]%n%{$reset_color%} @ $fg_bold[cyan]%m%{$reset_color%}: $fg[yellow]$(get_pwd)$(put_spacing)$(git_prompt_info) $(battery_charge)'
 }
 
-PROMPT='%{$reset_color%}→ '
+PROMPT='%{$reset_color%}> '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="[git:"
 ZSH_THEME_GIT_PROMPT_SUFFIX="]$reset_color"
