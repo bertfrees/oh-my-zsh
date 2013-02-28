@@ -4,3 +4,6 @@
 [submodule "zsh-history-substring-search"]
 	path = custom/plugins/zsh-history-substring-search
 	url = git://github.com/zsh-users/zsh-history-substring-search.git
+[submodule "custom/plugins/zsh-dp2-completion"]
+	path = custom/plugins/zsh-dp2-completion
+	url = git@github.com:bertfrees/zsh-dp2-completion.git
