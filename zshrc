@@ -51,9 +51,16 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Syntax highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+
+# Beeps are annoying
+setopt NO_BEEP
+
+# ------------------------------------------------------------------
+# COMMON SETTINGS (shared by bash & zsh)
+# ------------------------------------------------------------------
 
 BASH=$HOME/Dropbox/Settings/bash
 
-source $BASH/shell_init.sh
-
+source $BASH/common.sh
