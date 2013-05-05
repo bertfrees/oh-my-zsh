@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/Dropbox/Settings/zsh
+ZSH=$HOME/.dotfiles/zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -61,6 +61,6 @@ setopt NO_BEEP
 # COMMON SETTINGS (shared by bash & zsh)
 # ------------------------------------------------------------------
 
-BASH=$HOME/Dropbox/Settings/bash
+BASH=$ZSH/../bash
 
 source $BASH/common.sh
