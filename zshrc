@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.homesick/repos/home/oh-my-zsh
+DOTFILES=$HOME/.homesick/repos/home
+ZSH=$DOTFILES/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -58,9 +59,11 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 setopt NO_BEEP
 
 # ------------------------------------------------------------------
-# COMMON SETTINGS (shared by bash & zsh)
+# COMMON SETTINGS
 # ------------------------------------------------------------------
 
-BASH=$ZSH/../bash
+export DOTFILES
 
-source $BASH/common.sh
+source $DOTFILES/sh/aliases.sh
+source $DOTFILES/sh/path.sh
+source $DOTFILES/sh/misc.sh
